@@ -6,8 +6,8 @@ export default function Footer() {
           
           {/* Brand Col */}
           <div className="flex flex-col gap-6 md:col-span-6">
-            <h3 className="font-headline-md text-[32px] text-white font-black tracking-tight uppercase">
-              Prime<span className="text-[#a41f13]">snaks</span>
+            <h3 className="font-headline-md text-[32px] text-white font-black tracking-tighter uppercase">
+              PRIME<span className="text-[#a41f13]">SNAKS</span>
             </h3>
             <p className="font-body-md text-[#888] max-w-sm font-medium leading-relaxed">
               Pure, natural, and scientifically crafted nutrition built for your lifestyle, not the pantry shelf.

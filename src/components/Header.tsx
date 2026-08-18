@@ -6,8 +6,9 @@ export default function Header() {
       <div className="h-20 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between">
         <div className="flex items-center gap-8">
           <Link href="/" className="flex items-center">
-            <span className="material-symbols-outlined text-primary text-2xl mr-1">eco</span>
-            <span className="font-headline-md text-2xl text-deep-ink font-bold tracking-tight">prime<span className="font-normal text-secondary">snaks</span></span>
+            <span className="font-headline-md text-[26px] md:text-[30px] text-black font-black tracking-tighter uppercase">
+              PRIME<span className="text-[#a41f13]">SNAKS</span>
+            </span>
           </Link>
           <nav className="hidden lg:flex items-center gap-6">
             <Link className="font-label-caps text-label-caps text-deep-ink hover:text-primary transition-colors font-bold tracking-wider" href="#">SHOP</Link>
