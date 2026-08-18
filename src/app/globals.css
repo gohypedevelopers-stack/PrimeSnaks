@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --color-earth-brown: #784a32;
+  --color-forest-green: #006c4a;
+  --color-deep-purple: #5f2490;
+  --color-soft-ivory: #f6f2ef;
+  --color-pure-white: #ffffff;
+  --color-deep-black: #000000;
+
+  /* Semantic mappings for the components */
+  --color-background: var(--color-soft-ivory);
+  --color-on-background: var(--color-deep-black);
+  --color-surface: var(--color-pure-white);
+  --color-surface-container-low: #fdfcfb;
+  --color-surface-container: #f9f8f6;
+  --color-on-surface: var(--color-deep-black);
+  --color-on-surface-variant: #4a4a4a;
+  
+  --color-primary: var(--color-forest-green);
+  --color-on-primary: var(--color-pure-white);
+  
+  --color-secondary: var(--color-earth-brown);
+  --color-on-secondary: var(--color-pure-white);
+  
+  --color-tertiary: var(--color-deep-purple);
+  --color-on-tertiary: var(--color-pure-white);
+
+  --color-deep-ink: var(--color-deep-black);
+  --color-jing-red: var(--color-earth-brown); /* Replaced with Earth Brown for earthy tone */
+  --color-electric-yellow: var(--color-forest-green); /* Replaced with Forest Green */
+  --color-science-blue: var(--color-deep-purple); /* Replaced with Deep Purple */
+  --color-brightland-cream: var(--color-soft-ivory);
+  
+  --radius: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  --spacing-container-max: 1280px;
+  --spacing-gutter: 24px;
+  --spacing-margin-mobile: 20px;
+  --spacing-margin-desktop: 64px;
+  --spacing-section-gap: 100px;
+
+  /* Typography */
+  --font-montserrat: var(--font-montserrat), sans-serif;
+  --font-poppins: var(--font-poppins), sans-serif;
+
+  /* We map the old font classes to the new fonts for easy migration */
+  --font-label-caps: var(--font-poppins);
+  --font-headline-lg: var(--font-montserrat);
+  --font-benefit-heading: var(--font-montserrat);
+  --font-body-md: var(--font-poppins);
+  --font-headline-xl: var(--font-montserrat);
+  --font-headline-md: var(--font-montserrat);
+  --font-body-lg: var(--font-poppins);
+  --font-headline-lg-mobile: var(--font-montserrat);
+  
+  --text-label-caps: 12px;
+  --text-label-caps--line-height: 1.4;
+  --text-label-caps--letter-spacing: 0.1em;
+  --text-label-caps--font-weight: 600;
+
+  --text-headline-lg: 42px;
+  --text-headline-lg--line-height: 1.2;
+  --text-headline-lg--font-weight: 600;
+
+  --text-benefit-heading: 18px;
+  --text-benefit-heading--line-height: 1.3;
+  --text-benefit-heading--font-weight: 600;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.6;
+  --text-body-md--font-weight: 400;
+
+  --text-headline-xl: 64px;
+  --text-headline-xl--line-height: 1.1;
+  --text-headline-xl--letter-spacing: -0.01em;
+  --text-headline-xl--font-weight: 700;
+
+  --text-headline-md: 28px;
+  --text-headline-md--line-height: 1.3;
+  --text-headline-md--font-weight: 600;
+
+  --text-body-lg: 20px;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--font-weight: 400;
+
+  --text-headline-lg-mobile: 36px;
+  --text-headline-lg-mobile--line-height: 1.2;
+  --text-headline-lg-mobile--font-weight: 600;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+    @apply bg-background font-body-md text-on-background;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
