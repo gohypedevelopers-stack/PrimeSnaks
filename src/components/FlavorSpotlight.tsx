@@ -5,7 +5,7 @@ export default function FlavorSpotlight() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="order-2 lg:order-1 relative">
             <div className="aspect-square rounded-3xl overflow-hidden border-4 border-deep-ink rotate-[-2deg] shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:rotate-0 transition-transform duration-500 bg-surface">
-              <img src="/images/flavor_spotlight.jpg" alt="Creamy Natural Peanut Butter on Toast" className="w-full h-full object-cover" />
+              <img src="/images/cat_nut_butters.jpg" alt="PrimeSnacks Natural Peanut Butter" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -top-6 -right-6 bg-tertiary text-on-tertiary w-24 h-24 rounded-full flex items-center justify-center font-headline-md text-center text-sm border-2 border-deep-ink rotate-12 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] uppercase">
               100%<br />Pure
